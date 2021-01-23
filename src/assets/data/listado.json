@@ -1,0 +1,26 @@
+[{
+        "name": "ALERTAS",
+        "redirecTo": "/alertas",
+        "icon": "beer-outline"
+    },
+    {
+        "name": "ACTIO-SHEET",
+        "redirecTo": "/action-sheet",
+        "icon": "boat-outline"
+    },
+    {
+        "name": "TARJETAS",
+        "redirecTo": "/tarjetas",
+        "icon": "bug-outline"
+    },
+    {
+        "name": "CLIENTES",
+        "redirecTo": "/clientes",
+        "icon": "people-outline"
+    },
+    {
+        "name": "RECURSOS",
+        "redirecTo": "/recursos",
+        "icon": "calculator-outline"
+    }
+]

@@ -1,0 +1,18 @@
+<app-header titulo="CLIENTES"></app-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let cliente of clientes |async">
+            <ion-label>
+                <h3>{{cliente.name}}</h3>
+                <h4>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    {{cliente.email}}</h4>
+            </ion-label>
+            <ion-label slot="end" text-left>
+                <ion-icon name="call-outline"></ion-icon>
+                <h4>{{cliente.phone}}</h4>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,26 @@
+<app-header titulo="TARJETAS"></app-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor='let c of Campeon'>
+            <ion-avatar slot="start">
+                <img [src]="c.url">
+            </ion-avatar>
+            <ion-label>{{c.name}}</ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-card mode="ios" color="primary">
+        <ion-card-header>
+            <img src='/assets/ahri.jpg'>
+            <ion-card-title>
+                AHRI
+            </ion-card-title>
+            <ion-card-subtitle>
+                MID
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum mollitia sequi suscipit nam nesciunt cupiditate deserunt aliquam beatae delectus aliquid perspiciatis laborum porro iste, blanditiis velit tempore illum eos!
+        </ion-card-content>
+    </ion-card>
+</ion-content>

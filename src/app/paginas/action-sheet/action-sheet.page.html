@@ -1,0 +1,16 @@
+<app-header titulo=actionSheet></app-header>
+
+<ion-content>
+
+    <ion-button expand="full" color="primary" (click)="presentActionSheet()">
+        Ejecutar Action-Sheet
+    </ion-button>
+
+    <ion-list>
+        <ion-item *ngFor="let folder of carpeta" (click)="presentActionSheet()">
+            <ion-icon slot="end" [name]="folder.icon"></ion-icon>
+            <ion-label>Carpeta de {{folder.name}}</ion-label>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
