@@ -1,0 +1,19 @@
+<app-header titulo="CARDS"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let champ of champions ">
+      <img [src]="'http://ddragon.leagueoflegends.com/cdn/11.2.1/img/champion/'+champ.image.full">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{champ.name}}</ion-card-title>
+          <ion-card-subtitle>{{champ.title}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{champ.blurb}}
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

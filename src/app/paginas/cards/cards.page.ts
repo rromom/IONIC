@@ -1,22 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Champion } from 'src/app/intefaces/champion';
-import { DataService } from '../../services/data.service';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
-  selector: 'app-personajes',
-  templateUrl: './personajes.page.html',
-  styleUrls: ['./personajes.page.scss'],
+  selector: 'app-cards',
+  templateUrl: './cards.page.html',
+  styleUrls: ['./cards.page.scss'],
 })
-export class PersonajesPage implements OnInit {
+export class CardsPage implements OnInit {
 
-  champions: Champion [];
+  champions: Champion[];
+
   constructor(private datosServicio: DataService) { }
 
   ngOnInit() {
     this.datosServicio.getchamp().subscribe((data: any) => {
       this.champions = Object.values(data.data);
-      // console.log(this.champions);
+      console.log(this.champions);
     });
-
   }
+
 }

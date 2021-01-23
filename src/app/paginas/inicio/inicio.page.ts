@@ -39,6 +39,11 @@ export class InicioPage implements OnInit {
       name: 'PERSONAJES',
       redirecTo: '/personajes',
       icon: 'person-circle-outline'
+    },
+    {
+      name: 'CARDS',
+      redirecTo: '/cards',
+      icon: 'person-circle-outline'
     }
   ];
   menu: Observable<any>;
