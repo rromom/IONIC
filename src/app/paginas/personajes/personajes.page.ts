@@ -14,8 +14,9 @@ export class PersonajesPage implements OnInit {
 
   ngOnInit() {
     this.datosServicio.getchamp().subscribe((data: any) => {
-      this.champions = Array.from(data.data);
-      console.log( type(data.data) );
+      this.champions = Object.values(data.data);
+      console.log(this.champions);
     });
+
   }
 }

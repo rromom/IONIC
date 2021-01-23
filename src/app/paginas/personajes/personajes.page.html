@@ -2,9 +2,13 @@
 
 <ion-content>
     <ion-list>
-        <!-- <ion-item *ngFor="let champ of champions ">
+        <ion-item *ngFor="let champ of champions ">
+            <ion-avatar slot="start">
+                <img [src]="'http://ddragon.leagueoflegends.com/cdn/11.2.1/img/champion/'+champ.image.full">
+              </ion-avatar>
             <ion-label>
+                {{champ.id}}
             </ion-label>
-        </ion-item> -->
+        </ion-item>
     </ion-list>
 </ion-content>

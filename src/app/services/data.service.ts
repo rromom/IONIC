@@ -9,7 +9,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   public getClients(){
-    return this.http.get('http://jsonplaceholder.typicode.com/users ');
+    return this.http.get('https://jsonplaceholder.typicode.com/users ');
   }
 
   public getResoucers(){
@@ -21,6 +21,6 @@ export class DataService {
   }
 
   public getchamp(){
-    return this.http.get('http://ddragon.leagueoflegends.com/cdn/11.2.1/data/en_US/champion.json');
+    return this.http.get('https://ddragon.leagueoflegends.com/cdn/11.2.1/data/en_US/champion.json');
   }
 }
